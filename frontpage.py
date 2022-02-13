@@ -1,20 +1,20 @@
 import webbrowser          # import webbrowser
-import pyautogui as mouse  # import pyautogui for mouse control
+import pyautogui as control  # import pyautogui for mouse control
 import time                # import time
 import schedule            # import schedule
 def mainfile():
 
     def work():
-        webbrowser.open("https://online.karunya.edu/oauth/login?access=student") #Enter the webpage that you want to open.
-# use python IDLE and type import puautogui and use mouse.position() to find x and y axix of your mouse at any location
+        webbrowser.open(
+            "https://online.karunya.edu/oauth/login?access=student")  # Enter the webpage that you want to open.
+        # use python IDLE and type import puautogui and use mouse.position() to find x and y axix of your mouse at any location
         time.sleep(5)
-        mouse.moveTo(964,592)
+        control.hotkey('tab')
+        control.press('enter')
+        time.sleep(3)
+        control.hotkey('ctrlleft', 'w')
         time.sleep(1)
-        mouse.click(964,592)
-        time.sleep(2)
-        mouse.moveTo(145, 658)
-        time.sleep(1)
-        mouse.click(145, 658)
+        webbrowser.open("https://online.karunya.edu/students/home")
 # The main screen of our script
     print('''
                 Welcome To Class Automation System

@@ -1,1 +1,1 @@
-python "D:\new idea\frontpage.py"
+python "KEEP FILE PATH OF frontpage.py in " ", for example D:\new idea\frontpage.py"

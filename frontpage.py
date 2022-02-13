@@ -21,7 +21,6 @@ Press (1) ---> to start and run the automation
 user_input = int(input(":> "))
 
 if user_input == 1:
-    lock = True
     #change the time with the time of your classes
     schedule.every().day.at("08:55").do(work)
     schedule.every().day.at("09:55").do(work)
@@ -35,7 +34,7 @@ if user_input == 1:
     schedule.every().monday.at("14:55").do(work)
 
 # its a small code so that the code keeps running on and on
-while lock == True:
+while True:
     schedule.run_pending()
     time.sleep(1)
 

@@ -24,7 +24,7 @@ def mainfile():
 
     if user_input == 1:
         #change the time with the time of your classes
-        schedule.every().day.at("11:58").do(work)      #8:55
+        schedule.every().day.at("08:55").do(work)
         schedule.every().day.at("09:55").do(work)
         schedule.every().day.at("10:55").do(work)
         schedule.every().monday.at("11:55").do(work)
